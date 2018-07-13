@@ -44,7 +44,7 @@ header {
 header a {
 	text-decoration:none;
 	color: #173e43;
-	font:19px 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	padding: 0 8px 0 8px;
 	text-transform: uppercase;
 }
@@ -59,8 +59,11 @@ header li {
 	display:inline;
 	list-style:none;
 }
-header ul li a:hover {
-	color: green;
+header li a:hover {
+	padding: 3px 9px 3px 9px;
+  border-bottom: 1px solid  #5D6D7E;
+  border-radius: 3px;
+  transition: .4s;
 }
 
 .toggle {
@@ -98,7 +101,7 @@ nav {
 
 }
 .bancon h4 {
-	font:150 30px 'Gugi', cursive;
+	font:150 35px 'Poiret One', cursive;
 	color:#3fb0ac;
 	border:2px solid #ffff;
 	border-radius:5px;
@@ -114,14 +117,14 @@ nav {
 }
 #welcome h2 {
 	padding-top:50px;
-	font:200 35px 'Cinzel Decorative', cursive;
+	font:200 35px 'Cuprum', sans-serif;
 	text-align:center;
 	color:#c7ebe8;
 
 
 }
 #welcome p {
-	font:19px 'Open Sans', sans-serif;
+	font:19px 'Lato';
 	text-align:center;
 	margin:5px 80px 10px 80px;
 	padding-top:5px;
@@ -155,7 +158,7 @@ nav {
 }
 #news h2 {
 	padding-top:50px;
-	font:200 35px 'Cinzel Decorative', cursive;
+	font: 200 40px 'Satisfy';
 	text-align:center;
 	color:#000;
 }
@@ -165,20 +168,19 @@ nav {
 	float:left;
 	display:block;
 	text-align:center;
-	width:40%;
-	padding:15px;
-	text-align:justify;
-	margin-left:50px;
+	width: 40%;
+	padding: 5px;
+	text-align: center;
+	margin-left: 80px;
 
 }
 .newcon img {
-	height:100px;
-	width:100px;
-	float:left;
-	margin-right:5px;
+	height: 80px;
+	width: 80px;
+	text-align:
 }
 .newcon h3 {
-	font:30px 'Oswald', sans-serif;
+	font: 25px  'Lato';
 	text-align:center;
 	color:#000;
 }
@@ -187,19 +189,25 @@ nav {
 	margin: 0 auto;
 }
 .newcon p {
-	font:19px 'Open Sans', sans-serif;
-	padding-left:5px;
+	font: 16px 'Open Sans', sans-serif;
+	padding-left: 10px;
+	line-height: 1.2;
+
 }
 /*Video */
 
 #vid {
 	background-image:url(../img/bg1.jpg);
-	font:200 25px 'Cinzel Decorative', cursive;
-	text-align:center;
-	color:#000;
 	height:638px;
+	text-align:center;
 
 }
+
+#vid h2 {
+	font: 200 40px 'Satisfy';
+	color:#000;
+}
+
 #vid .button_1 {
 	display: block;
 	margin: 0 auto;
@@ -211,10 +219,8 @@ nav {
 	padding:0;
 	text-align:center;
 }
-#facts {
-	margin:0;
-	padding:0;
-	text-align:center;
+#facts h2 {
+	font: 200 45px 'Satisfy';
 }
 
 #facts {
@@ -235,7 +241,7 @@ nav {
 
 }
 .leftpane h3 {
-	font:30px 'Oswald', sans-serif;
+	font:30px 'Courgette';
 	color:#000;
 }
 .leftpane p {
@@ -243,37 +249,35 @@ nav {
 }
 
 .foot {
-	margin:0;
-	background:#89bdd3;
-	width:100%;
-	height:100%;
-	text-align:center;
+		margin:0;
+		background:#89bdd3;
+		width:100%;
+		height:100%;
+		text-align:center;
 }
 
 .foot p {
-	font:15px 'Open Sans', sans-serif;
-	padding-top:40px;
-	padding-bottom:10px;
+	font: 16px 'Open Sans', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 5px;
 }
 .footimage {
 	display:inline;
 	margin:0;
 
 }
-.footimage img{
-	height:35px;
-	width:35px;
-	padding-bottom:10px;
-	cursor:pointer;
+
+.foot a {
+	text-decoration: none;
+}
+.fab {
+	color: green;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 
-
 /* Media query start */
-
-
-
-
 @media(max-width:1236px){
     .toggle {
         display: block;
@@ -325,24 +329,18 @@ nav {
     #logobrand img {
         width:45%;
     }
-
-
     .toggle {
         display: block;
         cursor: pointer;
-          margin-top: 10px;
+        margin-top: 10px;
         margin-bottom: 10px;
         padding:5px 10px;
-
     }
 }
-
-
 @media(max-width:1177px){
     .toggle {
         display: block;
         cursor: pointer;
-
     }
     ul {
         width: 90%;
@@ -359,58 +357,54 @@ nav {
     .active a {
         display: block;
     }
-     .leftpane1 img {
+    .leftpane1 img {
         height:320px;
-            width:270px;
+        width:270px;
 }
 }
 
 @media(min-width:1172px) {
-    #logobrand img {
-        width:400px;
+  #logobrand img {
+    width:400px;
     }
 }
 @media(max-width:1164px) {
-     #logobrand img {
-        width:400px;
-
-    }
+	#logobrand img {
+  	width:400px;
+	}
 }
 @media(max-width:1157px) {
-#logobrand img {
-        width:400px;
+	#logobrand img {
+    width:400px;
     }
-
 }
 
 @media(max-width:1153px) {
-#logobrand img {
-        width:400px;
+	#logobrand img {
+      width:400px;
     }
 
 }
 @media(max-width:1144px) {
-     #logobrand img {
-        width:45%;
-
+  #logobrand img {
+  width:45%;
     }
 }
 
 @media(max-width:1236px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-          margin-top: 10px;
-        margin-bottom: 10px;
-        padding:5px 10px;
-
+  .toggle {
+      display: block;
+    	cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding:5px 10px;
     }
      #welcome {
-        height: 100%;
+      height: 100%;
     }
     #welcome .button_1 {
-        margin-top:5px;
-        margin-bottom:20px;
+      margin-top:5px;
+      margin-bottom:20px;
     }
 }
 @media(max-width:320px) {
@@ -418,17 +412,16 @@ nav {
         display: none;
         visibility: hidden;
     }
-
-     #logobrand1 img {
-        visibility: visible;
-         display:block;
-         float: left;
-         margin-top:15px;
+    #logobrand1 img {
+      visibility: visible;
+      display:block;
+    	float: left;
+      margin-top:15px;
     }
-    #welcome {
+  #welcome {
 		height:100%;
-
 	}
+
 	#welcome h2 {
 		text-align:center;
 		padding-top:15px;
@@ -445,36 +438,34 @@ nav {
 		margin-bottom: 5px;
 	}
 
-    #news {
-       margin:0;
+  #news {
+  	margin:0;
     padding: 0;
-
-
     }
-    #news h2{
+
+  #news h2{
 		padding-top:30px;
 
 	}
 	#news .newcon {
 	  float: none;
     margin-left: 0;
-        width:90%;
-
-
+    width:90%;
 	}
+
 	.newcon img {
 		visibility:hidden;
 		display:none;
 	}
 	.newcon h3{
 		padding-top:5px;
-         text-align: justify;
+    text-align: justify;
 	}
 	.newcon p{
-          text-align: justify;
+    text-align: justify;
 		margin: 0;
-        padding: 0;
-        letter-spacing: 0;
+    padding: 0;
+  	letter-spacing: 0;
 	}
     #vid {
         height: 100%;
@@ -486,19 +477,18 @@ nav {
 }
 
 @media(max-width:770px) {
-    #logobrand img {
-        display: none;
-        visibility: hidden;
-    }
-
-     #logobrand1 img {
-        visibility: visible;
-         display:block;
-         float: left;
-         margin-top:15px;
-    }
-    #welcome {
-		height:100%;
+  #logobrand img {
+    display: none;
+    visibility: hidden;
+  }
+  #logobrand1 img {
+    visibility: visible;
+    display:block;
+    float: left;
+   margin-top:15px;
+  }
+  #welcome {
+	height:100%;
 
 	}
 	#welcome h2 {
@@ -517,20 +507,18 @@ nav {
 		margin-bottom: 5px;
 	}
 
-    #news {
-       margin:0;
+  #news {
+    margin:0;
     padding: 0;
-
-
     }
-    #news h2{
+  #news h2{
 		padding-top:30px;
 
 	}
 	#news .newcon {
 	  float: none;
     margin-left: 0;
-        width:90%;
+    width:90%;
 
 
 	}
@@ -543,17 +531,17 @@ nav {
          text-align: justify;
 	}
 	.newcon p{
-          text-align: justify;
+    text-align: justify;
 		margin: 0;
-        padding: 0;
-        letter-spacing: 0;
+    padding: 0;
+  	letter-spacing: 0;
 	}
     #vid {
-        height: 100%;
+    	height: 100%;
     }
     #vid .button_1 {
-        margin-top:5px;
-        margin-bottom:10px;
+      margin-top:5px;
+      margin-bottom:10px;
     }
 }
 
@@ -563,11 +551,11 @@ nav {
         visibility: hidden;
     }
 
-     #logobrand1 img {
-        visibility: visible;
-         display:block;
-         float: left;
-         margin-top:15px;
+    #logobrand1 img {
+      visibility: visible;
+      display:block;
+      float: left;
+      margin-top:15px;
     }
     #welcome {
 		height:100%;
@@ -590,7 +578,7 @@ nav {
 	}
 
     #news {
-       margin:0;
+     margin:0;
     padding: 0;
 
 
@@ -602,7 +590,7 @@ nav {
 	#news .newcon {
 	  float: none;
     margin-left: 0;
-        width:90%;
+    width:90%;
 
 
 	}
@@ -612,147 +600,132 @@ nav {
 	}
 	.newcon h3{
 		padding-top:5px;
-         text-align: justify;
+      text-align: justify;
 	}
 	.newcon p{
-          text-align: justify;
+    text-align: justify;
 		margin: 0;
-        padding: 0;
-        letter-spacing: 0;
+    padding: 0;
+    letter-spacing: 0;
 	}
     #vid {
-        height: 100%;
+      height: 100%;
     }
     #vid .button_1 {
-        margin-top:5px;
-        margin-bottom:10px;
+    	margin-top:5px;
+    	margin-bottom:10px;
     }
 }
 
 @media(max-width:1055px) {
-    #logobrand img {
-        display: none;
-        visibility: hidden;
-    }
-
-     #logobrand1 img {
-        visibility: visible;
-         display:block;
-         float: left;
-         margin-top:15px;
+  #logobrand img {
+    display: none;
+    visibility: hidden;
+  }
+  #logobrand1 img {
+    visibility: visible;
+   	display:block;
+    float: left;
+    margin-top:15px;
     }
 }
 
-  @media(max-width:1231px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-          margin-top: 10px;
-        margin-bottom: 10px;
-        padding:5px 10px;
-
-    }
-     #welcome {
-        height: 100%;
-    }
-    #welcome .button_1 {
-        margin-top:5px;
-        margin-bottom:20px;
-    }
-
-
+@media(max-width:1231px){
+	.toggle {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:5px 10px;
+	}
+  #welcome {
+    height: 100%;
+	}
+  #welcome .button_1 {
+    margin-top:5px;
+    margin-bottom:20px;
+  }
 }
-
 
 @media(max-width:1129px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-          margin-top: 10px;
-        margin-bottom: 10px;
-        padding:5px 10px;
-
-    }
-     #welcome {
-        height: 100%;
-    }
-    #welcome .button_1 {
-        margin-top:5px;
-        margin-bottom:20px;
-    }
-
-
+  .toggle {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+  	margin-bottom: 10px;
+    padding:5px 10px;
+  }
+  #welcome {
+    height: 100%;
+  }
+  #welcome .button_1 {
+    margin-top:5px;
+    margin-bottom:20px;
+  }
 }
 @media(max-width:1124px){
-    #welcome {
-        height: 100%;
-    }
-    #logobrand img {
-        width:50%;
-
-    }
-    #welcome .button_1 {
-        margin-top:5px;
-        margin-bottom:20px;
-    }
-
-
+  #welcome {
+  height: 100%;
+  }
+  #logobrand img {
+    width:50%;
+  }
+  #welcome .button_1 {
+    margin-top:5px;
+    margin-bottom:20px;
+  }
 }
 
 @media(max-width:1120px){
-    #welcome {
-        height: 100%;
-    }
-    #welcome .button_1 {
-        margin-top:5px;
-        margin-bottom:20px;
-    }
-
-
+  #welcome {
+    height: 100%;
+  }
+  #welcome .button_1 {
+    margin-top:5px;
+    margin-bottom:20px;
+  }
 }
 
 @media(max-width:1114px){
-    #welcome {
-        height: 100%;
-    }
-    #welcome .button_1 {
-        margin-top:10px;
-        margin-bottom:20px;
-    }
-     #logobrand img {
-        width:400px;
-    }
-
+  #welcome {
+    height: 100%;
+  }
+  #welcome .button_1 {
+    margin-top:10px;
+    margin-bottom:20px;
+  }
+   #logobrand img {
+    width:400px;
+  }
 }
 @media(min-width:1135px) {
-    #logobrand img {
-        width:400px;
-    }
+  #logobrand img {
+    width:400px;
+  }
 }
 @media(min-width:1100px) {
-    #logobrand img {
-        width:400px;
+  #logobrand img {
+  width:400px;
     }
 }
 @media(max-width:1089px) {
-    #logobrand img {
-        width:400px;
-    }
+  #logobrand img {
+    width:400px;
+  }
 }
 
 @media(max-width:1095px){
-    #logobrand img {
-        width:400px%;
-    }
+  #logobrand img {
+    width:400px%;
+  }
 }
 
-
 @media(max-width:1008px){
-    #logobrand img {
-        width:50%;
-    }
+  #logobrand img {
+    width: 50%;
+  }
 
-    .newcon {
+.newcon {
 	margin-top:10px;
 	float:left;
 	display:block;
@@ -761,109 +734,99 @@ nav {
 	padding:15px;
 	text-align:justify;
 	margin-left:50px;
-    }
-         }
+	}
+ }
 
-     @media(max-width:1045px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-          margin-top: 10px;
-        margin-bottom: 10px;
-        padding:5px 10px;
-
-    }
-    ul {
-        width: 90%;
-        display: none;
-
-    }
-    ul li {
-        display: block;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        padding-left
-    }
-    .active a {
-        display: block;
-    }
-
-    @media(max-width:1036px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-
-    }
-    ul {
-        width: 90%;
-        display: none;
-
-    }
-    ul li {
-        display: block;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        padding-left
-    }
-    .active a {
-        display: block;
-    }
-     .leftpane1 img {
-        height:300px;
-            width:240px;
+@media(max-width:1045px){
+  .toggle {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:5px 10px;
 }
-         }
+  ul {
+    width: 90%;
+    display: none;
+}
+ul li {
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left
+  }
+  .active a {
+    display: block;
+    }
+  @media(max-width:1036px){
+  .toggle {
+    display: block;
+    cursor: pointer;
+	}
+  ul {
+  	width: 90%;
+  	display: none;
+	}
+  ul li {
+    display: block;
+  	text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left
+    }
+    .active a {
+        display: block;
+    }
+   .leftpane1 img {
+      height:300px;
+    width:240px;
+		}
+}
 
 
 @media(max-width:962px){
-    .toggle {
-        display: block;
-        cursor: pointer;
-
+  .toggle {
+    display: block;
+    cursor: pointer;
+  }
+  ul {
+    width: 90%;
+    display: none;
     }
-    ul {
-        width: 90%;
-        display: none;
-
+  ul li {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left
+  }
+  .active a {
+    display: block;
+  }
+  .leftpane1 {
+    float: none;
+    display: block;
+    width: 100%;
     }
-    ul li {
-        display: block;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        padding-left
-    }
-    .active a {
-        display: block;
-    }
-    .leftpane1 {
-        float: none;
-        display: block;
-        width: 100%;
-    }
-
-
-     .leftpane1 img {
-        height:300px;
-            width:240px;
+  .leftpane1 img {
+    height:300px;
+    width:240px;
+	}
 }
-         }
 
 @media(max-width:958px){
-    #logobrand img {
-      width:50%;
+  #logobrand img {
+    width:50%;
     }
-
-    .newcon {
-			margin-top:10px;
-			float:left;
-			display:block;
-			text-align:center;
-			width:37%;
-			padding:15px;
-			text-align:justify;
-			margin-left:50px;
+  .newcon {
+		margin-top:10px;
+		float:left;
+		display:block;
+		text-align:center;
+		width:37%;
+		padding:15px;
+		text-align:justify;
+		margin-left:50px;
     }
-         }
+  }
